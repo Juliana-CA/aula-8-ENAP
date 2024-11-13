@@ -6,7 +6,8 @@ st.markdown("Este é texto")
 st.caption("Esta é a a legenda")
 st.code("x=2021")
 st.latex(r''' a+a r^1+a r^2+a r^3 ''')
-nota=st.select_slider('Nota de 0 a 100',options=('ruim','ótimo'))
+nota=st.select_slider('Nota de 0 a 100',options=(0,101,10))
+st.write(nota)
 # criando elementos gráficos
 '''Informar como colher os dados através de variáveis'''
 x = st.checkbox('Sim')
