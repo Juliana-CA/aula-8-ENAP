@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 st.title("Este é o título do app")
 st.header("Este é o subtítulo")
 st.subheader("Este é o terceiro subtítulo")
@@ -34,3 +35,11 @@ st.success("Você conseguiu!")
 st.error("Erro!")
 st.warning("Advertência")
 st.info("Esta é uma informação")
+
+#inserindo dataframe
+df=pd.DataFrame({
+    'nomeServidor': ['Adriana', 'Monica', 'Samara'],
+    'salario': [5200,6300,5000]
+})
+st.write("Criando uma tabela")
+st.write(df)
