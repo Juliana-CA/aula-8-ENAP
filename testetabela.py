@@ -11,3 +11,5 @@ opcao = st.selectbox(
     'Qual servidor você gostaria de selecionar?',
     options=["Selecione..."] + df['nomeServidor'].tolist()
 )
+dadosfiltrados=df[df['nomeServidor']==opcao]
+dadosfiltrados
