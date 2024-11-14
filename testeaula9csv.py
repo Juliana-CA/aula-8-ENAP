@@ -26,3 +26,6 @@ st.write("Nestes " +str(qtdeMunicipios) + " existem " + str(qtdeComunidades) + "
 
 st.header('Número de comunidades por estado')
 st.bar_chart(dfq['NM_UF'].value_counts())
+
+st.header('Os dez municípios com mais comunidades quilombolas')
+st.bar_chart(dfq['NM_MUNIC'].value_counts()[:10])
