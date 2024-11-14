@@ -25,5 +25,4 @@ qtdeComunidades = len(dfq['NM_AGLOM'].unique())
 st.write("Nestes " +str(qtdeMunicipios) + " existem " + str(qtdeComunidades) + " comunidades quilombolas")
 
 st.header('Número de comunidades por estado')
-st.bar_chart(dfq['NM_UF'].value_counts())st.header('Número de comunidades por estado')
 st.bar_chart(dfq['NM_UF'].value_counts())
