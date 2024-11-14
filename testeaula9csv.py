@@ -13,4 +13,7 @@ dadosFiltrados = dfq[dfq['NM_UF'] == estadoFiltro]
 if st.checkbox('Mostrar tabela'):
   st.write(dadosFiltrados)
 st.map(dadosFiltrados, latitude="Lat_d", longitude="Long_d")
+st.write('Comunidades Quilombolas por estado')
 st.bar_chart(dfq['NM_UF'].value_counts())
+st.write('Municipios com maior número de comunidades quilombolas')
+st.bar_chart(dfq['NM_MUNIC'].value_counts()[:10])
