@@ -17,3 +17,9 @@ st.write('Comunidades Quilombolas por estado')
 st.bar_chart(dfq['NM_UF'].value_counts())
 st.write('Municipios com maior número de comunidades quilombolas')
 st.bar_chart(dfq['NM_MUNIC'].value_counts()[:10])
+
+qtdeMunicipios = len(dfq['NM_MUNIC'].unique())
+st.write("Existem" + str(qtdeMunicipios) + "municípios com comunidades quilombolas")
+
+qtdeComunidades = len(dfq['NM_AGLOM'].unique())
+st.write("Nestes" +str(qtdeMunicipios) + "existem" + str(qtdeComunidades) + "comunidades quilombolas")
